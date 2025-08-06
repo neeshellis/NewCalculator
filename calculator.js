@@ -1,35 +1,42 @@
 // define the num1 & num2 variables
 
-let num1 = 3
-let num2 = 2
+let num1;
+let num2;
 let result;
 
-   function add() {
-    result = num1 + num2;
-   console.log(result)
-    }
- 
- function subtract()  {
-    result = num1 - num2;
-    console.log(result)
-     }
-   
-   
-function divide()  {
-    result = num1 / num2
-    console.log(result)
-     }
-    
-function multiply() {
-    result = num1 * num2
-    console.log(result)
+function add() {
+  num1 = Number(document.getElementById("num1").value);
+  num2 = Number(document.getElementById("num2").value);
+  result = num1 + num2;
+  console.log(result);
 }
 
-add()
-subtract()
-divide()
-multiply()
-// 
+function subtract() {
+  num1 = Number(document.getElementById("num1").value);
+  num2 = Number(document.getElementById("num2").value);
+  result = num1 - num2;
+  console.log(result);
+}
+
+function divide() {
+  num1 = Number(document.getElementById("num1").value);
+  num2 = Number(document.getElementById("num2").value);
+  result = num1 / num2;
+  console.log(result);
+}
+
+function multiply() {
+  num1 = Number(document.getElementById("num1").value);
+  num2 = Number(document.getElementById("num2").value);
+  result = num1 * num2;
+  console.log(result);
+}
+
+add();
+subtract();
+divide();
+multiply();
+//
 
 // //       <script>
 //         function Calculate() {
@@ -44,7 +51,6 @@ multiply()
 //                 .catch(error => console.error('Error:', error));
 //         }
 //     </script>
-
 
 // reset calculator  - numbers, math function and = field
 
