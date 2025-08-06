@@ -1,35 +1,34 @@
 // define the num1 & num2 variables
 
-let num1() 
-let num2()
+let num1 = 3
+let num2 = 2
+let result;
 
-function mathCalc {
-
-    if function add {
-    then sumadd = num1 + num2;
-   console.log(submit)sumadd;
+   function add() {
+    result = num1 + num2;
+   console.log(result)
     }
  
- else
-     if function subtract  {
-    then sumsubtract = num1 - num2;
-    console.log(submit)sumsubtract;
+ function subtract()  {
+    result = num1 - num2;
+    console.log(result)
      }
    
    
-else
-     if function divide  {
-    then sumdivide = num1 / num2
-    console.log(submit)sumdivide
+function divide()  {
+    result = num1 / num2
+    console.log(result)
      }
     
-    
-else
-     if function multiply {
-    then summultiply = num1 * num2
-    console.log(submit)summultiply
+function multiply() {
+    result = num1 * num2
+    console.log(result)
 }
 
+add()
+subtract()
+divide()
+multiply()
 // 
 
 // //       <script>
@@ -49,14 +48,14 @@ else
 
 // reset calculator  - numbers, math function and = field
 
-document.getElementById('num1').value = '';
-document.getElementById('num2').value = '';
+// document.getElementById('num1').value = '';
+// document.getElementById('num2').value = '';
 
-function resetCalc()   {
-document.getElementById('display').value = '';
+// function resetCalc()   {
+// document.getElementById('display').value = '';
 
-num1 = 0;
-num2 = 0;
-mathCalc = '';
-console.log ('Reset');
-}
+// num1 = 0;
+// num2 = 0;
+// mathCalc = '';
+// console.log ('Reset');
+// }
