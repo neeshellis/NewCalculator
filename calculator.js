@@ -9,6 +9,7 @@ function add() {
   num2 = Number(document.getElementById("num2").value);
   result = num1 + num2;
   console.log(result);
+  document.getElementById("result").textContent = result;
 }
 
 function subtract() {
@@ -16,6 +17,7 @@ function subtract() {
   num2 = Number(document.getElementById("num2").value);
   result = num1 - num2;
   console.log(result);
+  document.getElementById("result").textContent = result;
 }
 
 function divide() {
@@ -23,6 +25,7 @@ function divide() {
   num2 = Number(document.getElementById("num2").value);
   result = num1 / num2;
   console.log(result);
+  document.getElementById("result").textContent = result;
 }
 
 function multiply() {
@@ -30,12 +33,25 @@ function multiply() {
   num2 = Number(document.getElementById("num2").value);
   result = num1 * num2;
   console.log(result);
+  document.getElementById("result").textContent = result;
 }
 
-add();
-subtract();
-divide();
-multiply();
+// reset button
+function resetCalculator() {
+  document.getElementById("num1").value = "";
+  document.getElementById("num2").value = "";
+  document.getElementById("result").value = "";
+
+  num1 = 0;
+  num2 = 0;
+  result = 0;
+}
+
+// add();
+// subtract();
+// divide();
+// multiply();
+
 //
 
 // //       <script>
